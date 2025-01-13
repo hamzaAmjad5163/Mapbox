@@ -10,7 +10,7 @@ import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
 import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
 
 mapboxgl.accessToken =
-    "pk.eyJ1IjoiaGFtemEwMzE4NzUzMzMiLCJhIjoiY2x6czNuYWg5MjRzZjJscXdzMTFjZWRtZCJ9.GDbTGTy6QwbmGLAsDXpoZA";
+    "your-access-token";
 
 const MapComponent = () => {
     const mapContainerRef = useRef(null);
@@ -69,8 +69,8 @@ const MapComponent = () => {
         const newMarkers = places.map((place) => {
             const el = document.createElement("div");
             el.className = "marker";
-            el.style.width = "30px";
-            el.style.height = "30px";
+            el.style.width = "60px";
+            el.style.height = "60px";
             el.style.backgroundImage = `url(${iconUrl})`; 
             el.style.backgroundSize = "contain";
             el.style.borderRadius = "50%";
